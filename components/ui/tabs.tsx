@@ -44,7 +44,7 @@ export const Tabs = ({
 				)}
 			>
 				{propTabs.map((tab, idx) => (
-					<Link key={tab.title} href={tab.url}>
+					<Link key={tab.title} href={tab.url} className="relative transition-all transform-gpu rounded-full">
 						<button
 							onClick={() => {
 								moveSelectedTabToTop(idx);
@@ -59,7 +59,7 @@ export const Tabs = ({
 									layoutId="clickedbutton"
 									transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
 									className={cn(
-										"absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-full ",
+										"absolute inset-0 backdrop-blur-md bg-zinc-400/30 dark:bg-zinc-100/10 rounded-full ",
 										activeTabClassName
 									)}
 								/>

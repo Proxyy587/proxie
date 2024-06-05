@@ -1,9 +1,9 @@
-import Header from "@/components/shared/Header";
-
+import Hero from "@/components/shared/Hero";
 
 const RootPage = () => {
   return (
-    <div className="bg-white dark:bg-black">
+    <div className="">
+      <Hero/>
     </div>
   )
 }

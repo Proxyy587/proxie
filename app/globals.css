@@ -54,7 +54,7 @@
 		@apply border-border scroll-smooth m-0 p-0;
 	}
 	body {
-		@apply bg-background text-foreground w-full h-full;
+		@apply bg-background text-foreground w-full h-full overflow-x-hidden;
 	}
 }
 
@@ -70,6 +70,20 @@
 	.flex-between {
 		@apply flex justify-between items-center;
 	}
+
+	.flex-start {
+        @apply flex justify-start items-center;
+    }
+	
+	
+	/* CUSTOM TYPOGRAPHY */
+	.heading{
+		@apply text-3xl leading-tight font-semibold;
+	}
+
+	.subheading{
+        @apply text-lg leading-tight font-normal;
+    }
 
 	/* TYPOGRAPHY */
 	/* 64 */
@@ -97,7 +111,7 @@
 
 	/* 32 */
 	.h4-medium {
-		@apply font-medium text-[32px] leading-[40px];
+		@apply font-semibold text-3xl leading-[40px];
 	}
 
 	/* 28 */

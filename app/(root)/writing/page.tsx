@@ -1,9 +1,9 @@
 import React from 'react'
 
-const WritingSection = () => {
+const BlogPage = () => {
   return (
-    <div>WritingSection</div>
+    <div>BlogPage</div>
   )
 }
 
-export default WritingSection
+export default BlogPage

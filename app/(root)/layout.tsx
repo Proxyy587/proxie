@@ -1,4 +1,5 @@
 import Header from "@/components/shared/Header";
+import Image from "next/image";
 
 const SubRootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
