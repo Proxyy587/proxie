@@ -16,18 +16,18 @@ export const navItems = [
 export const socialLinks = [
     {
         name: 'twitter',
-        url: 'https://twitter.com/josh_winger',
+        url: 'https://x.com/proxyxd_s',
     },
     {
         name: 'github',
-        url: 'https://github.com/josh-winger',
+        url: 'https://github.com/Proxyy587',
     },
     {
         name: 'linkedin',
-        url: 'https://www.linkedin.com/in/josh-winger/',
+        url: 'https://www.linkedin.com/in/invaliduser/',
     },
     {
         name: 'instagram',
-        url: 'https://www.instagram.com/josh_winger/',
+        url: 'https://www.instagram.com/ptrdoxy/',
     }
 ]
