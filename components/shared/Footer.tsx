@@ -1,4 +1,4 @@
-import moment from 'moment';
+import moment from 'moment-timezone';
 
 const Footer = () => {
 	return (
@@ -17,7 +17,7 @@ const Footer = () => {
 				</span>
 				<span className="ml-auto inline-flex gap-1.5">
 					<span>⏲️</span>
-                    <span>{moment().format('h:mm a')}, Assam India</span>
+                    <span>{moment().tz("Asia/Kolkata").format('h:mm a')}, Assam India</span>
 				</span>
 			</div>
 		</footer>
