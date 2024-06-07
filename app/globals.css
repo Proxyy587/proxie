@@ -111,7 +111,7 @@
 
 	/* 32 */
 	.h4-medium {
-		@apply font-semibold text-3xl leading-[40px];
+		@apply font-semibold text-2xl leading-[40px];
 	}
 
 	/* 28 */

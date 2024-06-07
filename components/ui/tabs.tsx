@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type Tab = {
 	title: string;
@@ -26,7 +27,7 @@ export const Tabs = ({
 }) => {
 	const [active, setActive] = useState<Tab>(propTabs[0]);
 	const [tabs, setTabs] = useState<Tab[]>(propTabs);
-
+	const path = usePathname();
 	const moveSelectedTabToTop = (idx: number) => {
 		const newTabs = [...propTabs];
 		const selectedTab = newTabs.splice(idx, 1);
@@ -54,7 +55,7 @@ export const Tabs = ({
 								transformStyle: "preserve-3d",
 							}}
 						>
-							{active.url === tab.url && (
+							{path === tab.url && (
 								<motion.div
 									layoutId="clickedbutton"
 									transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}

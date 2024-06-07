@@ -1,5 +1,5 @@
+import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
-import Image from "next/image";
 
 const SubRootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
@@ -8,6 +8,7 @@ const SubRootLayout = ({ children }: { children: React.ReactNode }) => {
 			<section className="md:mt-8 lg:mt-10 pt-8 pb-16">
                 {children}
             </section>
+			<Footer/>
 		</main>
 	);
 };

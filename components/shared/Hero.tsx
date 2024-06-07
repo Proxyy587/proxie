@@ -5,21 +5,20 @@ import {
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { socialLinks } from "@/constant";
-import { ArrowUp, ArrowUpRight } from "lucide-react";
-import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 const Hero = () => {
 	return (
-		<div>
+		<div className="w-full">
 			<h1 className="heading">Abhijit Bhattacharjee</h1>
 			<div className="max-w-[58ch] text-zinc-600 dark:text-zinc-400">
 				<p className="subheading">
 					<TooltipProvider>
 						<Tooltip>
-							<TooltipTrigger>12y/o&nbsp;</TooltipTrigger>
+							<TooltipTrigger>14y/o&nbsp;</TooltipTrigger>
 							<TooltipContent>
-								<p>5th August 2012</p>
+								<p>5th August 2010</p>
 							</TooltipContent>
 						</Tooltip>
 					</TooltipProvider>
@@ -44,10 +43,11 @@ const Hero = () => {
 							<Link
 								key={idx}
 								href={socialLink.url}
-								className="flex-start text-black dark:text-white/90 hover:text-white"
+								target="_blank"
+								className="flex-start w-fit text-black dark:text-white/90 hover:text-white"
 							>
 								{socialLink.name}
-								<ArrowUpRight className="w-5 h-5 flex-center opacity-0 hover:opacity-100 transition-all duration-500" />
+								<ArrowUpRight className="w-5 h-5 flex-center" />
 							</Link>
 						))}
 					</div>
