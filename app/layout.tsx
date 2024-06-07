@@ -25,13 +25,13 @@ export default function RootLayout({
 			<html lang="en" suppressHydrationWarning>
 				<head />
 				<body className={poppins.className}>
-					<div className="absolute top-0 left-0 md:-top-1/2 md:left-1/2 z-[-1000] -translate-x-1/2 -translate-y-1/2 lg:scale-100 w-full opacity-60">
+					<div className="absolute top-[-30%] left-0 md:left-1/2 z-[-1000] -translate-x-1/2 -translate-y-1/2 lg:scale-100 w-full opacity-60">
 						<Image
-							src="/gradient.svg"
+							src="/gradient2.svg"
 							alt="Gradient"
 							width={750}
 							height={750}
-							className="object-cover w-full"
+							className="object-cover w-full saturate-100"
 						/>
 					</div>
 					<SmoothScrolling>
