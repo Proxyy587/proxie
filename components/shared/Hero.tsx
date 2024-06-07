@@ -39,15 +39,16 @@ const Hero = () => {
 					</p>
 
 					<div className="flex flex-col space-y-1">
+						<h2 className="h4-medium dark:text-white text-black">Follow me</h2>
 						{socialLinks.map((socialLink, idx) => (
 							<Link
 								key={idx}
 								href={socialLink.url}
 								target="_blank"
-								className="flex-start w-fit text-black dark:text-white/90 hover:text-white"
+								className="group flex-start w-fit text-gray-5=600 hover:text-black dark:text-white/70 dark:hover:text-white hover:underline transition-all duration-200"
 							>
 								{socialLink.name}
-								<ArrowUpRight className="w-5 h-5 flex-center" />
+								<ArrowUpRight className="w-5 h-5 flex-center opacity-0 group-hover:opacity-100 transition-all duration-200" />
 							</Link>
 						))}
 					</div>

@@ -50,7 +50,7 @@ export const Tabs = ({
 							onClick={() => {
 								moveSelectedTabToTop(idx);
 							}}
-							className={cn("relative px-4 py-2 rounded-full", tabClassName)}
+							className={cn("relative px-3 py-1 rounded-full", tabClassName)}
 							style={{
 								transformStyle: "preserve-3d",
 							}}
@@ -60,7 +60,7 @@ export const Tabs = ({
 									layoutId="clickedbutton"
 									transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
 									className={cn(
-										"absolute inset-0 backdrop-blur-md bg-zinc-400/30 dark:bg-zinc-100/10 rounded-full ",
+										"absolute inset-0 backdrop-blur-md bg-white/90 dark:bg-black/30 rounded-full ",
 										activeTabClassName
 									)}
 								/>
