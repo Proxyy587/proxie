@@ -55,7 +55,7 @@ const AboutHero = () => {
 						I&apos;m currently switching to Convex for better performance and
 						scalability. I also use TypeScript for better code management,
 						GraphQL for efficient data handling, and Docker for easy deployment.
-						Additionally, I'm learning various skills such as Java, Python,
+						Additionally, I&apos;m learning various skills such as Java, Python,
 						Rust, DevOps to further enhance my skills and streamline the
 						development process. This mix of tools helps me create a better
 						version of myself.
