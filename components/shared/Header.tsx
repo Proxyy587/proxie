@@ -33,7 +33,7 @@ const Header = () => {
         <div className="px-1 flex-center gap-2">
           <Tabs tabs={navItems} />
 
-          <nav className="relative z-10 flex max-w-max flex-1 items-center justify-center bg-transparent">
+          {/* <nav className="relative z-10 flex max-w-max flex-1 items-center justify-center bg-transparent">
             <div className="relative">
               <ul className="group flex flex-1 list-none items-center justify-center space-x-1">
                 <li className="p-0">
@@ -44,7 +44,7 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-          </nav>
+          </nav> */}
         </div>
       </nav>
       <nav className="flex-center ml-auto">
