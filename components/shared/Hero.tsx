@@ -29,13 +29,7 @@ const Hero = () => {
 			<section className="mt-8 text-zinc-600 dark:text-zinc-400">
 				<div className="space-y-5">
 					<p>
-						I am actually very normal person and i dont like sucking dicks. If
-						you are a girl you are free to reach me out i can cure your periods
-						for 9 months. Im very extrovert and pervert at the sametime
-					</p>
-					<p>
-						Girls are free to DM me I will rate you out of 5 and yes anything
-						below 2 is unrapeable
+						Im really cool person trust me.. I like coding music and I just want to save school from terrorist attack sometimes i deal with drugs dealing and human trafficin but yeah i love kidnapping kids and its sad that few escaped from my basements and they are snapchat users
 					</p>
 
 					<div className="flex flex-col space-y-1">
