@@ -17,7 +17,7 @@ const Footer = () => {
 				</span>
 				<span className="ml-auto inline-flex gap-1.5">
 					<span>⏲️</span>
-                    <span>{moment().tz("Asia/Kolkata").format('h:mm a')}, Assam India</span>
+                    <span>{moment().tz("India").format('h:mm a')}, Assam India</span>
 				</span>
 			</div>
 		</footer>
