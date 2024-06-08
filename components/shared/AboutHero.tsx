@@ -14,11 +14,11 @@ const AboutHero = () => {
 					</p>
 					<p>
 						I began my journey not too long ago. I was introduced to the world
-						of coding by an ad by "Chintu". I became curious because I was
+						of coding by an ad by &quot;Chintu&quot;. I became curious because I was
 						always passionate about computers and technology. I started watching
 						YouTube videos on making games in JavaScript and created a few games
 						like Pong and T-Rex Runner. At the time, I was just doing it for fun
-						and wasn't very serious about coding, so I eventually stopped.
+						and wasn&apos;t very serious about coding, so I eventually stopped.
 					</p>
 					<p>
 						In 2022, I was reintroduced to coding when I saw people freelancing
