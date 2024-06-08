@@ -13,6 +13,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
 	title: "Abhijit Bhattacharjee",
 	description: "Hi Im Proxy I develop User Interface for web applications",
+	icons: './favicon.ico'
 };
 
 export default function RootLayout({

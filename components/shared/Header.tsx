@@ -28,7 +28,7 @@ const Header = () => {
           width={44}
           height={44}
           alt="logo"
-          className="object-cover rounded-full hover:scale-90 transition-all ease-in-out hidden md:block hover:border-sky-300 border-spacing-1 border-2"
+          className="object-cover rounded-full hover:scale-90 transition-all ease-in-out hidden md:block border-2"
         />
         <div className="px-1 flex-center gap-2">
           <Tabs tabs={navItems} />
