@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
-import SmoothScrolling from "@/components/providers/SmoothScroll";
+// import SmoothScrolling from "@/components/providers/SmoothScroll";
 import Image from "next/image";
 
 const poppins = Poppins({
@@ -35,7 +35,7 @@ export default function RootLayout({
 							className="object-cover w-full saturate-100"
 						/>
 					</div>
-					<SmoothScrolling>
+					{/* <SmoothScrolling> */}
 						<ThemeProvider
 							attribute="class"
 							defaultTheme="system"
@@ -44,7 +44,7 @@ export default function RootLayout({
 						>
 							{children}
 						</ThemeProvider>
-					</SmoothScrolling>
+					{/* </SmoothScrolling> */}
 				</body>
 			</html>
 		</>

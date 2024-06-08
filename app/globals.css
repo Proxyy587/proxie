@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+/* .size-3 {
+    width: 20px;
+    height: 20px;
+} */
+.bg-0 {
+    background-color: #161b22;
+}
+.bg-1 {
+    background-color: #0e4429;
+}
+.bg-2 {
+    background-color: #006d32;
+}
+.bg-3 {
+    background-color: #39d353;
+}
+
+
 @layer base {
 	:root {
 		--background: 0 0% 100%;

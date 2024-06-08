@@ -22,7 +22,7 @@ const Hero = () => {
 							</TooltipContent>
 						</Tooltip>
 					</TooltipProvider>
-					Web Developer, Student from India
+					Developer, Student from India
 				</p>
 			</div>
 

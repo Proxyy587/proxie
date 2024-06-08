@@ -1,19 +1,19 @@
-"use client";
-import React from "react";
-import { ReactLenis } from "@studio-freight/react-lenis";
+// "use client";
+// import React from "react";
+// import { ReactLenis } from "@studio-freight/react-lenis";
 
-interface SmoothScrollingProps {
-  children: React.ReactNode;
-}
+// interface SmoothScrollingProps {
+//   children: React.ReactNode;
+// }
 
-const SmoothScrolling: React.FC<SmoothScrollingProps> = ({ children }) => {
-  return (
-    <>
-     {/* <ReactLenis root> */}
-      {children}
-     {/* </ReactLenis> */}
-    </>
-  );
-};
+// const SmoothScrolling: React.FC<SmoothScrollingProps> = ({ children }) => {
+//   return (
+//     <>
+//      {/* <ReactLenis root> */}
+//       {children}
+//      {/* </ReactLenis> */}
+//     </>
+//   );
+// };
 
-export default SmoothScrolling;
+// export default SmoothScrolling;
