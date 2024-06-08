@@ -27,6 +27,9 @@ const BlogPage = () => {
 				for updates.
 			</p>
 		</div>
+    <section>
+      <p className="text-gray-500">No blogs uploaded</p>
+    </section>
     </>
 	);
 };
