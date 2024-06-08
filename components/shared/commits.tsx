@@ -57,25 +57,25 @@ const Commits = () => {
 					<span className="mr-1 text-sm text-zinc-600 dark:text-zinc-400">
 						Stars:
 					</span>
-					242
+					24
 				</div>
 				<div>
 					<span className="mr-1 text-sm text-zinc-600 dark:text-zinc-400">
 						Followers:
 					</span>
-					70
+					2
 				</div>
 				<div>
 					<span className="mr-1 text-sm text-zinc-600 dark:text-zinc-400">
 						PRS:{" "}
 					</span>
-					64
+					2
 				</div>
 				<div>
 					<span className="mr-1 text-sm text-zinc-600 dark:text-zinc-400">
 						Issues:{" "}
 					</span>
-					17
+					1
 				</div>
 			</div>
 		</>
