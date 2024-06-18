@@ -1,11 +1,6 @@
-import { NextResponse } from "next/server";
+// api/dc-status/route.ts
 
-enum status {
-  online,
-  idle,
-  dnd,
-  offline,
-}
+import { NextResponse } from "next/server";
 
 export type LanyardResponse = {
   data: {
@@ -15,7 +10,7 @@ export type LanyardResponse = {
       discriminator: string;
       avatar: string;
     };
-    discord_status: status;
+    discord_status: string;
     active_on_discord_web: boolean;
     active_on_discord_desktop: boolean;
     active_on_discord_mobile: boolean;
@@ -33,8 +28,8 @@ export type LanyardResponse = {
       };
       created_at: number;
     }[];
-    success: boolean;
   };
+  success: boolean;
 };
 
 export const dynamic = "force-dynamic";
@@ -49,6 +44,7 @@ export const GET = async () => {
       },
     }
   );
-  console.log(res);
-  return NextResponse.json<LanyardResponse>(await res.json());
+  const data = await res.json();
+  console.log(data);
+  return NextResponse.json<LanyardResponse>(data);
 };
