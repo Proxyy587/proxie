@@ -1,3 +1,10 @@
+import {
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+  TwitterLogoIcon,
+} from "@radix-ui/react-icons";
+
 export const navItems = [
   {
     title: "~",
@@ -15,20 +22,24 @@ export const navItems = [
 
 export const socialLinks = [
   {
-    name: "twitter",
+    name: "Twitter",
     url: "https://x.com/proxyxd_s",
+    icon: TwitterLogoIcon,
   },
   {
-    name: "github",
+    name: "Github",
     url: "https://github.com/Proxyy587",
+    icon: GitHubLogoIcon,
   },
   {
-    name: "linkedin",
+    name: "Linkedin",
     url: "https://www.linkedin.com/in/invaliduser/",
+    icon: LinkedInLogoIcon,
   },
   {
-    name: "instagram",
+    name: "Instagram",
     url: "https://www.instagram.com/ptrdoxy/",
+    icon: InstagramLogoIcon,
   },
 ];
 

@@ -6,7 +6,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="md:col-span-2 h-auto min-h-[21.5rem] row-span-3 bg-opacity-50 bg-white dark:bg-white/5 rounded-md p-4 border border-zinc-800/50">
+    <div className="md:col-span-2 h-auto min-h-[21.5rem] row-span-3 bg-opacity-50 bg-white dark:bg-white/5 rounded-md p-4 border border-zinc-800/20">
       <div className="opacity-1">
         <h1 className="font-bold text-sm dark:text-slate-500 mb-1">Email</h1>
         <Input

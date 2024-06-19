@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import ContactForm from "./forms/contact";
+import ContactSocial from "./cards/socials";
 
 const Contact = () => {
   const [currentTime, setCurrentTime] = useState("");
@@ -54,7 +55,7 @@ const Contact = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4">
         <ContactForm />
-        <div className="row-start-1 md:row-auto"></div>
+        <ContactSocial />
       </div>
     </section>
   );
