@@ -8,13 +8,17 @@ const ContactForm = () => {
   return (
     <div className="md:col-span-2 h-auto min-h-[21.5rem] row-span-3 bg-opacity-50 bg-white dark:bg-white/5 rounded-md p-4 border border-zinc-800/20">
       <div className="opacity-1">
-        <h1 className="font-bold text-sm dark:text-slate-500 mb-1">Email</h1>
+        <h1 className="font-medium text-sm dark:text-slate-200/90 mb-1">
+          Email
+        </h1>
         <Input
           type="text"
           placeholder="example@gmail.com"
           className="w-full p-2 mb-4 rounded-md bg-slate-300/50 dark:bg-slate-200/5 text-sm placeholder:text-gray-600 dark:placeholder:text-slate-200/20"
         />
-        <h1 className="font-bold text-sm dark:text-slate-500 mb-1">MESSAGE</h1>
+        <h1 className="font-medium text-sm dark:text-slate-200/90 mb-1">
+          MESSAGE
+        </h1>
         <Textarea
           placeholder="Say hello to Proxy 👋"
           className="w-full min-h-[9rem] p-2 h-36 mb-4 rounded-md bg-slate-300/50 dark:bg-slate-200/5 text-sm placeholder:text-gray-600 dark:placeholder:text-slate-200/20"

@@ -26,26 +26,31 @@ export const socialLinks = [
     name: "Twitter",
     url: "https://x.com/proxyxd_s",
     icon: TwitterLogoIcon,
+    color: "sky-400",
   },
   {
     name: "Github",
     url: "https://github.com/Proxyy587",
     icon: GitHubLogoIcon,
+    color: "gray-900",
   },
   {
     name: "Linkedin",
     url: "https://www.linkedin.com/in/invaliduser/",
     icon: LinkedInLogoIcon,
+    color: "blue-700",
   },
   {
     name: "Instagram",
     url: "https://www.instagram.com/ptrdoxy/",
     icon: InstagramLogoIcon,
+    color: "rose-700",
   },
   {
     name: "Discord",
     url: "https://discord.com/users/726293592376606770",
     icon: DiscordLogoIcon,
+    color: "indigo-700",
   },
 ];
 

@@ -4,12 +4,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { socialLinks } from "@/constant";
-import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
-import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
-import Terminal from "../ui/Terminal";
-import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
@@ -66,20 +60,6 @@ const Hero = () => {
               </Link>
             ))}
           </div> */}
-          {/* <Dialog>
-            <DialogTrigger asChild>
-              <Button
-                variant={"outline"}
-                size={"sm"}
-                className="dark:text-white"
-              >
-                Open Terminal
-              </Button>
-            </DialogTrigger>
-            <DialogContent>
-              <Terminal />
-            </DialogContent>
-          </Dialog> */}
         </div>
       </section>
     </div>

@@ -5,7 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Commits from "./commits";
 import DiscordCard from "./cards/discord";
-
+import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
+import Terminal from "../ui/Terminal";
+import { Button } from "../ui/button";
 export const revalidate = 60;
 
 const BentoHero = () => {
@@ -188,6 +190,20 @@ const BentoHero = () => {
 							<div className="group flex gap-4 overflow-hidden flex-row"></div>
 							<div className="group flex gap-4 overflow-hidden flex-row mt-2"></div>
 						</div> */}
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button
+                  variant={"outline"}
+                  size={"sm"}
+                  className="dark:text-white"
+                >
+                  Open Terminal
+                </Button>
+              </DialogTrigger>
+              <DialogContent>
+                <Terminal />
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
         <div className="col-span-3 md:ml-3">
