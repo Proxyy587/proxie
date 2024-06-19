@@ -38,20 +38,6 @@ const Hero = () => {
             sad that few escaped from my basements and they are snapchat users
           </p>
 
-          <div className="flex flex-col space-y-1">
-            <h2 className="h4-medium dark:text-white text-black">Follow me</h2>
-            {socialLinks.map((socialLink, idx) => (
-              <Link
-                key={idx}
-                href={socialLink.url}
-                target="_blank"
-                className="group flex-start w-fit text-gray-5=600 hover:text-black dark:text-white/70 dark:hover:text-white hover:underline transition-all duration-200"
-              >
-                {socialLink.name}
-                <ArrowUpRight className="w-5 h-5 flex-center opacity-0 group-hover:opacity-100 transition-all duration-200" />
-              </Link>
-            ))}
-          </div>
           <svg
             aria-hidden="true"
             width="80"
@@ -65,16 +51,35 @@ const Hero = () => {
               fill="currentColor"
             ></path>
           </svg>
-          <Dialog>
+
+          {/* <div className="flex flex-col space-y-1">
+            <h2 className="h4-medium dark:text-white text-black">Follow me</h2>
+            {socialLinks.map((socialLink, idx) => (
+              <Link
+                key={idx}
+                href={socialLink.url}
+                target="_blank"
+                className="group flex-start w-fit text-gray-5=600 hover:text-black dark:text-white/70 dark:hover:text-white hover:underline transition-all duration-200"
+              >
+                {socialLink.name}
+                <ArrowUpRight className="w-5 h-5 flex-center opacity-0 group-hover:opacity-100 transition-all duration-200" />
+              </Link>
+            ))}
+          </div> */}
+          {/* <Dialog>
             <DialogTrigger asChild>
-              <Button variant={"outline"} size={"sm"} className="text-white">
+              <Button
+                variant={"outline"}
+                size={"sm"}
+                className="dark:text-white"
+              >
                 Open Terminal
               </Button>
             </DialogTrigger>
             <DialogContent>
               <Terminal />
             </DialogContent>
-          </Dialog>
+          </Dialog> */}
         </div>
       </section>
     </div>

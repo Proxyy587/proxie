@@ -45,6 +45,5 @@ export const GET = async () => {
     }
   );
   const data = await res.json();
-  console.log(data);
   return NextResponse.json<LanyardResponse>(data);
 };

@@ -74,7 +74,12 @@ const BentoHero = () => {
             <div className="w-24">
               <Link href={"/anime"}>
                 <div className="h-36 group rounded-lg hover:scale-95 duration-500 transform-gpu relative">
-                  <Image src={"/hdwallpaper.webp"} alt="wallpapaper" fill />
+                  <Image
+                    src={"/hdwallpaper.webp"}
+                    alt="wallpapaper"
+                    width={1280}
+                    height={720}
+                  />
                   <p className="font-bold -rotate-90 absolute top-10 bottom-16 -left-3 text-white w-40">
                     こんにちは
                   </p>

@@ -5,7 +5,7 @@ import React from "react";
 const HeroProjects = () => {
   return (
     <section className="flex flex-col mt-4 md:mt-6 lg:mt-6 max-w-full">
-      <h1 className="h4-medium">Projects</h1>
+      <h1 className="h4-medium">Projects 📂</h1>
       <div className="w-full flex-center flex-col gap-3 pt-2">
         {heroProjectsContent.map((project, idx) => (
           <Link
@@ -21,7 +21,7 @@ const HeroProjects = () => {
           </Link>
         ))}
       </div>
-      <div className="mt-6 md:mt-8 flex-start gap-1 link text-gray-500 w-fit flex-shrink">
+      <div className="group mt-6 md:mt-8 flex-start gap-1 link text-gray-500 w-fit flex-shrink hover:cursor-default">
         <Svg2 />
         <div className="flex flex-wrap items-center">
           <span>Feel free to reach me out at</span>
