@@ -7,9 +7,9 @@ const RootPage = () => {
   return (
     <div className="flex flex-1 flex-col">
       <Hero />
-      <Contact />
       <HeroProjects />
       <BentoHero />
+      <Contact />
     </div>
   );
 };

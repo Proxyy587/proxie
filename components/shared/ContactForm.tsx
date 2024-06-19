@@ -40,18 +40,18 @@ const Contact = () => {
   }, []);
 
   return (
-    <section className="flex flex-col wrapper max-w-full">
+    <section className="flex flex-col max-w-full p-0!">
       <h1 className="h4-medium">Contacts 💬</h1>
       <p className="text-zinc-600 dark:text-zinc-400 mb-6">
-        It's currently{" "}
+        It&apos;s currently{" "}
         <span className="font-semibold text-black/60 dark:text-white/60">
           {currentTime}
         </span>{" "}
-        for me, so I'm probably{" "}
+        for me, so I&apos;m probably{" "}
         <span className="font-semibold text-black/60 dark:text-white/60">
           {status}
         </span>
-        . I'll get back to you soon.
+        . I&apos;ll get back to you soon.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4">
         <ContactForm />

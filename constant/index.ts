@@ -1,4 +1,5 @@
 import {
+  DiscordLogoIcon,
   GitHubLogoIcon,
   InstagramLogoIcon,
   LinkedInLogoIcon,
@@ -40,6 +41,11 @@ export const socialLinks = [
     name: "Instagram",
     url: "https://www.instagram.com/ptrdoxy/",
     icon: InstagramLogoIcon,
+  },
+  {
+    name: "Discord",
+    url: "https://discord.com/users/726293592376606770",
+    icon: DiscordLogoIcon,
   },
 ];
 
