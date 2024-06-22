@@ -48,7 +48,7 @@ export const Tabs = ({
 					<Link
 						key={tab.title}
 						href={tab.url}
-						className="relative transition-all transform-gpu rounded-full"
+						className="relative transition-all transform-gpu rounded-full md:mx-1 "
 					>
 						<button
 							aria-label="tabs"

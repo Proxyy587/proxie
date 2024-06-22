@@ -13,7 +13,7 @@ const Hero = () => {
 				<p className="subheading">
 					<TooltipProvider>
 						<Tooltip>
-							<TooltipTrigger>14y/o&nbsp;</TooltipTrigger>
+							<TooltipTrigger className="mr-2">14y/o</TooltipTrigger>
 							<TooltipContent>
 								<p>5th August 2010</p>
 							</TooltipContent>

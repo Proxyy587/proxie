@@ -7,8 +7,10 @@ import React, { useState } from "react";
 const ContactForm = () => {
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
+	const [loading, setLoading] = useState(false);
 
 	const handleSubmit = (e: React.FormEvent) => {
+		setLoading(true);
 		e.preventDefault();
 		console.log(email, message);
 	};
@@ -40,14 +42,20 @@ const ContactForm = () => {
 						<p className="text-gray-900 dark:text-gray-300 text-sm"></p>
 						<Button
 							aria-label="send message"
-							className="group rounded-full text-base dark:text-white font-medium transition-colors duration-75"
+							className="group rounded-full text-base dark:text-white font-medium transition-colors duration-75 bg-[#2E2EFF]"
 							type="submit"
 							size={"default"}
 						>
-							<span className="group-hover:translate-x-1 transition-all">
-								Send
-							</span>
-							<Send className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-all" />
+							{loading ? (
+								"Sending"
+							) : (
+								<>
+									<span className="group-hover:translate-x-1 transition-all">
+										Send
+									</span>
+									<Send className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-all" />
+								</>
+							)}
 						</Button>
 					</div>
 				</form>
