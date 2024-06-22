@@ -16,7 +16,7 @@ const BentoHero = () => {
 			<div className="grid md:grid-cols-6 grid-cols-3 mt-8 gap-3">
 				<div className="col-span-3">
 					<Link
-						href={"github.com"}
+						href={"/"}
 						className="relative h-full w-full group flex flex-col justify-between overflow-hidden rounded-2xl text-white transform-gpu transition-all duration-500 will-change-[outline,_transform] group-hover:scale-95 active:scale-100 hover:scale-95"
 					>
 						<span className="pointer-events-none absolute inset-0 -z-20">
@@ -92,7 +92,7 @@ const BentoHero = () => {
 						<div className="flex flex-col gap-3 w-full ">
 							<div className="flex gap-2">
 								<Link
-									href="linkedin.com"
+									href="/"
 									className="hover:scale-95 duration-500 transform-gpu h-[4.125rem] flex flex-col justify-center items-center rounded-lg text-white bg-[#2867b2] w-full"
 								>
 									<Linkedin width={24} height={24} />
