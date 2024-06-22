@@ -45,8 +45,13 @@ export const Tabs = ({
 				)}
 			>
 				{propTabs.map((tab, idx) => (
-					<Link key={tab.title} href={tab.url} className="relative transition-all transform-gpu rounded-full">
+					<Link
+						key={tab.title}
+						href={tab.url}
+						className="relative transition-all transform-gpu rounded-full"
+					>
 						<button
+							aria-label="tabs"
 							onClick={() => {
 								moveSelectedTabToTop(idx);
 							}}
