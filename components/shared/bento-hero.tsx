@@ -45,7 +45,7 @@ const BentoHero = () => {
 
 				<div className="col-span-2">
 					<div className="bg-[#f7f2f2] dark:bg-[#0d1117] rounded-lg h-36 relative group hover:scale-95 duration-500 transform-gpu">
-						<Link href="github.com">
+						<Link href="/">
 							<Commits />
 						</Link>
 					</div>
