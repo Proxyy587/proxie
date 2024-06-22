@@ -31,7 +31,6 @@ const Hero = () => {
 						dealing and human trafficin but yeah i love kidnapping kids and its
 						sad that few escaped from my basements and they are snapchat users
 					</p>
-					<p>TEst 231</p>
 					<svg
 						aria-hidden="true"
 						width="80"
