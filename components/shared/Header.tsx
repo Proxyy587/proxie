@@ -17,6 +17,7 @@ import {
 	navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 import Link from "next/link";
+import ThemeSwitch from "./ThemeSwitcher";
 
 const Header = () => {
 	const { theme, setTheme } = useTheme();
@@ -111,30 +112,7 @@ const Header = () => {
 				</div>
 			</nav>
 			<nav className="flex-center ml-auto">
-				<Button
-					aria-label="toogle theme"
-					size={"icon"}
-					variant={"ghost"}
-					className="flex flex-col items-center justify-center ml-1 overflow-hidden font-medium duration-200 ease-in-out rounded-full sm:p-4"
-					onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-				>
-					<Moon
-						aria-label="Dark"
-						className={`absolute w-5 h-5 transition-all duration-300 ease-in-out transform ${
-							theme === "dark"
-								? "rotate-0 scale-100 opacity-100"
-								: "rotate-90 scale-0 opacity-0"
-						}`}
-					/>
-					<Sun
-						aria-label="Light"
-						className={`absolute w-5 h-5 transition-all duration-300 ease-in-out transform ${
-							theme === "light"
-								? "rotate-0 scale-100 opacity-100"
-								: "-rotate-90 scale-0 opacity-0"
-						}`}
-					/>
-				</Button>
+				<ThemeSwitch />
 			</nav>
 		</header>
 	);
