@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getBlogPosts } from "@/lib/blog";
 import { formatDate } from "@/lib/format-date";
 import Image from "next/image";
+import HtmlContent from "../_components/markdown";
 
 export async function generateMetadata({
 	params,
@@ -22,8 +23,8 @@ export async function generateMetadata({
 		image,
 	} = post.metadata;
 	let ogImage = image
-		? `https://arnvgh.me${image}`
-		: `https://arnvgh.me/api/og?title=${title}`;
+		? `https://abhijee.com${image}`
+		: `https://abhijee.com/api/og?title=${title}`;
 
 	return {
 		title,
@@ -33,7 +34,7 @@ export async function generateMetadata({
 			description,
 			type: "article",
 			publishedTime,
-			url: `https://arnvgh.me/writing/${post.slug}`,
+			url: `https://abhijee.com/writing/${post.slug}`,
 			images: [
 				{
 					url: ogImage,
@@ -102,7 +103,10 @@ export default async function Blog({
 					className="!m-0 block  rounded-md object-cover object-center"
 				/>
 			)}
-			<article className=" prose-neutral">{post.content}</article>
+			<article className="prose prose-lg dark:prose-invert mt-8">
+				<HtmlContent content={post.content} />
+				{/* {post.content} */}
+			</article>
 		</section>
 	);
 }
