@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getBlogPosts } from "@/lib/blog";
 import { formatDate } from "@/lib/format-date";
 import Image from "next/image";
-import HtmlContent from "../_components/markdown";
+import ReactMarkdown from "react-markdown";
 
 export async function generateMetadata({
 	params,
@@ -104,8 +104,9 @@ export default async function Blog({
 				/>
 			)}
 			<article className="prose prose-lg dark:prose-invert mt-8">
-				<HtmlContent content={post.content} />
-				{/* {post.content} */}
+				<ReactMarkdown className={`prose prose-lg dark:prose-invert`}>
+					{post.content}
+				</ReactMarkdown>
 			</article>
 		</section>
 	);
